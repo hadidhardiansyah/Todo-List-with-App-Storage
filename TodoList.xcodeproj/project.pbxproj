@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23098C392AEE4FB6001D64DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23098C382AEE4FB5001D64DB /* LaunchScreen.storyboard */; };
 		23557DB22AE4E36C007DE60A /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23557DB12AE4E36C007DE60A /* TodoListApp.swift */; };
-		23557DB42AE4E36C007DE60A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23557DB32AE4E36C007DE60A /* ContentView.swift */; };
 		23557DB62AE4E370007DE60A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23557DB52AE4E370007DE60A /* Assets.xcassets */; };
 		23557DB92AE4E370007DE60A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23557DB82AE4E370007DE60A /* Preview Assets.xcassets */; };
+		23557DC12AE4E43E007DE60A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23557DC02AE4E43E007DE60A /* ListView.swift */; };
+		23557DC32AE4E6C1007DE60A /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23557DC22AE4E6C1007DE60A /* ListRowView.swift */; };
+		23557DC52AE4E94E007DE60A /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23557DC42AE4E94E007DE60A /* AddView.swift */; };
+		23557DC82AE4EDB1007DE60A /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23557DC72AE4EDB1007DE60A /* ItemModel.swift */; };
+		23557DCB2AE4F23F007DE60A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23557DCA2AE4F23F007DE60A /* ListViewModel.swift */; };
+		23F909802AED3226002D1178 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F9097F2AED3226002D1178 /* NoItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23098C382AEE4FB5001D64DB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23557DAE2AE4E36C007DE60A /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23557DB12AE4E36C007DE60A /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
-		23557DB32AE4E36C007DE60A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23557DB52AE4E370007DE60A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23557DB82AE4E370007DE60A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23557DC02AE4E43E007DE60A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		23557DC22AE4E6C1007DE60A /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		23557DC42AE4E94E007DE60A /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		23557DC72AE4EDB1007DE60A /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		23557DCA2AE4F23F007DE60A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		23F9097F2AED3226002D1178 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		23557DB02AE4E36C007DE60A /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				23557DC62AE4ED1C007DE60A /* Models */,
+				23557DC92AE4F206007DE60A /* ViewModels */,
+				23557DBF2AE4E41E007DE60A /* Views */,
 				23557DB12AE4E36C007DE60A /* TodoListApp.swift */,
-				23557DB32AE4E36C007DE60A /* ContentView.swift */,
 				23557DB52AE4E370007DE60A /* Assets.xcassets */,
 				23557DB72AE4E370007DE60A /* Preview Content */,
 			);
@@ -65,6 +79,34 @@
 				23557DB82AE4E370007DE60A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23557DBF2AE4E41E007DE60A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23557DC02AE4E43E007DE60A /* ListView.swift */,
+				23557DC22AE4E6C1007DE60A /* ListRowView.swift */,
+				23557DC42AE4E94E007DE60A /* AddView.swift */,
+				23F9097F2AED3226002D1178 /* NoItemsView.swift */,
+				23098C382AEE4FB5001D64DB /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23557DC62AE4ED1C007DE60A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23557DC72AE4EDB1007DE60A /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23557DC92AE4F206007DE60A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				23557DCA2AE4F23F007DE60A /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23098C392AEE4FB6001D64DB /* LaunchScreen.storyboard in Resources */,
 				23557DB92AE4E370007DE60A /* Preview Assets.xcassets in Resources */,
 				23557DB62AE4E370007DE60A /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23557DB42AE4E36C007DE60A /* ContentView.swift in Sources */,
+				23557DC52AE4E94E007DE60A /* AddView.swift in Sources */,
 				23557DB22AE4E36C007DE60A /* TodoListApp.swift in Sources */,
+				23557DCB2AE4F23F007DE60A /* ListViewModel.swift in Sources */,
+				23557DC12AE4E43E007DE60A /* ListView.swift in Sources */,
+				23557DC82AE4EDB1007DE60A /* ItemModel.swift in Sources */,
+				23F909802AED3226002D1178 /* NoItemsView.swift in Sources */,
+				23557DC32AE4E6C1007DE60A /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +318,12 @@
 				DEVELOPMENT_TEAM = 67RTDX96NH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do Stuff";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +350,12 @@
 				DEVELOPMENT_TEAM = 67RTDX96NH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do Stuff";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
